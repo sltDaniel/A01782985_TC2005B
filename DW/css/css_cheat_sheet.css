@@ -1,0 +1,31 @@
+/*Selectores*/
+h2{
+    /*Atributos*/
+    color: blue;
+}
+
+/*Aplicamos un estilo especifico al objeto, par id se usa #*/
+#second_h1{
+    color: purple;
+}
+
+/*Aplicamos estilo a una div con .*/
+.container{
+    border: 3px black solid;
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    margin: 0px;
+}
+
+.border{
+    border: 4px black solid;
+    margin: 8px;
+    padding: 5px;
+}
+
+#ejemplo{
+    border-bottom: revert;
+}
