@@ -1,12 +1,10 @@
-/*Selectores*/
-h2{
-    /*Atributos*/
-    color: blue;
+body{
+    margin: 0px;
+    background-color: rgb(193, 179, 208);
 }
 
-/*Aplicamos un estilo especifico al objeto, par id se usa #*/
-#second_h1{
-    color: purple;
+#titulo{
+    color: rgb(7, 20, 121);
 }
 
 /*Aplicamos estilo a una div con .*/
@@ -16,16 +14,111 @@ h2{
     padding: 10px;
 }
 
-body{
-    margin: 0px;
+.containerR{
+    border: 3px black solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
 }
 
-.border{
+#textoimg{
+    color: rgb(0, 255, 81);
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mBdFOB4mPEGaz01CElRmHgHaE7%26pid%3DApi&f=1&ipt=514fe66a7f7477b702888cb396d5765f3ec4e2b5f7c5eaba7d9bf9f0f64d42d9&ipo=images);
+    background-color: aqua;
+}
+
+.borderB{
     border: 4px black solid;
-    margin: 8px;
+    margin: 10px;
+    padding: 5px;
+}
+.borderl{
+    border-left: double;
+    border-left-color: blueviolet;
+}
+.borderR{
+    border-right:double;
+    border-right-color: brown;
+}
+.borderT{
+    border-top: double;
+    border-top-color: aqua;
+}
+.borderBot{
+    border-bottom: double;
+}
+
+.fontblockF{
+    border: 4px black solid;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
     padding: 5px;
 }
 
-#ejemplo{
-    border-bottom: revert;
+.fontblockS{
+    border: 4px black solid;
+    margin: 10px;
+    padding: 5px;
+    font-style: italic;
+}
+
+.fontblock{
+    border: 4px black solid;
+    margin: 10px;
+    padding: 5px;
+}
+
+.fontblockW{
+    border: 4px black solid;
+    margin: 10px;
+    padding: 5px;
+    font-weight: 800;
+}
+
+.color{
+    border: 4px black solid;
+    margin: 10px;
+    padding: 5px;
+    color: rgb(0, 0, 255);
+}
+
+#fontype{
+    font: 15px Arial;
+}
+
+#ejemploP{
+    padding: 10px 5px 15px 20px;
+}
+
+#ancho{
+    width: 75px;
+    border: 2px red solid;
+}
+
+#altura{
+    height: 5em;
+}
+
+.ulstyle {
+    list-style: square inside url("sqpurple.gif");
+  }
+
+#margen1{
+    margin: 10px;
+}
+
+#ovf{
+    overflow: scroll;
+}
+
+p.display1{
+    display: inline;
+}
+
+h4#pos{
+    position:static;
+}
+
+img{
+    filter: grayscale(85%);
 }
