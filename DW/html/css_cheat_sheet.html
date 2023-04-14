@@ -4,34 +4,191 @@
         <title>Document CSS</title>
         <link rel = "stylesheet" href = "/css/css_cheat_sheet.css">
         <body>
-            <h1>Cheat Sheet CSS</h1>
-            <!--border-->
-            <section class = "border">
-                <h1>border</h1>
-                <p>Aqu&iacute; podemos ver un ejemplo de como se utiliza border.
-                    De igualmanera estamos haciendo uso de margin y de padding, estos dos &uacute;ltimos
-                    sirven para que el borde y el texto no esten pegados. 
-                </p>
-            </section>
-
-            <section class="border">
-                <h3>border-left</h3>
-                <p></p>
-                <h3>border-right</h3>
-                <h3>border-top</h3>
-                <h3>border-bottom</h3>
-                <p>Coloca un elemento en la parte inferior.</p>
-                <p id="ejemplo">Ejemplo border-bottom</p>
-            </section>
-
-            <div class = "container">
-                <h1>Hello Cascading Style Sheet (CSS)!</h1>
-                <h1 id = "second_h1">Second h1</h1>
-                <h2>First h2</h2>
+            <h1 id="titulo">Cheat Sheet CSS</h1>
+            <div class="container">
+                <h2>Diferentes tipos de bordes</h2>
+                <section class="borderB">
+                    <h3>border</h3>
+                    <p>Aqu&iacute; podemos ver un ejemplo de como se utiliza border.
+                        de igualmanera estamos haciedno uso de margin y de padding, estos dos &uacute;ltimos
+                        sirven para que el borde y el texto no esten pegados. 
+                    </p>
+                </section>
+                <section class="borderl">
+                    <h3>border-left</h3>
+                    <p>Se podr&iacute;a decir que es una abreviatura para las propiedades como:</p>
+                    <ul>
+                        <li>ancho del borde izquierdo</li>
+                        <li>el estilo</li>
+                        <li>color del borde</li>
+                    </ul>
+                    <p>Podemos observar como al hacer uso de border-left se genera un solo borde del lado izquierdo.
+                        En este ejemplo utilizamos el double. 
+                    </p>
+                </section>
+                <section class="borderR">
+                    <h3>border-right</h3>
+                    <p>Es igual una abreciaci&oacute;n para:</p>
+                    <ul>
+                        <li>ancho del borde derecho</li>
+                        <li>estilo</li>
+                        <li>color</li>
+                    </ul>
+                    <p>A la derecha se puede ver el borde de color caf&eacute;</p>
+                </section>
+                <section class="borderT">
+                    <h3>border-top</h3>
+                    <p>Establece todos los bordes de la parte superior:</p>
+                    <ul>
+                        <li>ancho</li>
+                        <li>estilo</li>
+                        <li>color</li>
+                    </ul>
+                    <p>En la parte de arriba se ve el borde</p>
+                </section>
+                <section class="borderBot">
+                    <h3>border-bottom</h3>
+                    <p>Abreviatura para:</p>
+                    <ul>
+                        <li>ancho</li>
+                        <li>estilo</li>
+                        <li>color</li>
+                    </ul>
+                    <p>Aqu&iacute; se puede ver como se esta utilizando</p>
+                </section>
             </div>
+
+            <div class = "containerR">
+                <h3>Border-raduis</h3>
+                <p>Define el radio de las esquinas de los bordes del elemento</p>
+                <p>Ejemplo: Podemos apreciar como las esquinas son diferentes, m&aacute;s redondeadas.</p>
+            </div>
+
+            <div class="container">
+                <h3>Background-image</h3>
+                <p>Esta propiedad establece una o m&aacute;s im&aacute;genes de fondo en un elemento. Es recemendable poner un color de fondo.</p>
+                <p>Ejemplo: Vamos a colocar un texto con una im&aacute;gen.</p>
+                <p id = "textoimg">Esta im&aacute;gen es del cielo.</p>
+            </div>
+
+            <div class = "color">
+                <h3>Color</h3>
+                <p>Al hacer uso de este tipo de dato estamos indicando que color vamos a aplicar.</p>
+                <p>Por ejemplo: Estamos haciendo que lo que este dentro de este cuadro sea de color azul.</p>
+            </div>
+
             <div class = "container">
-                <h1>Second container</h1>
-                <p>This is the second container</p>
+                <h2>Diferentes tipos de font</h2>
+                <section class = "fontblock">
+                    <h3>Font</h3>
+                    <p id>Establece el tipo de fuente que se va a utilizar</p>
+                    <p id = "fontype">Por ejemplo: Vamos a escribir esta l&iacute;nea con un tipo de fuente espec&iacute;fica, la cual va a ser 
+                        Arial y 15px. Podemos ver como cambia el estilo con respecto al de arriba.
+                    </p>
+                </section>
+                <section class = "fontblockF">
+                    <h3>Font-family</h3>
+                    <p>Especif&iacute;ca la propiedad de un elemento. Pude contener varios nombres de fuente.</p>
+                    <p>Ejemplo: A este ploque se le est&aacute; aplicando un font.</p>
+                </section>
+                <section class ="fontblockS">
+                    <h3>Font-style</h3>
+                    <p>Establecer distintos tipos de fuentes, especif&iacute;ca el estilo del texto.</p>
+                    <p>Por ejemplo: En este bloque estamos haciendo uso del estilo italic.</p>
+                </section>
+                <section class="fontblockW">
+                    <h3>Font-weight</h3>
+                    <p>Establece como se deben mostrar los caracteres, pueden ser o m&aacute;s gruesos o delgados.</p>
+                    <p>Por ejemplo: Aqu&iacute; estamos haciendo que se vean m&aacute;s gruesos.</p>
+                </section>
+            </div>
+
+            <div class="container">
+                <h3>Width</h3>
+                <p>Establece el ancho de un elemento. Este no incluye relleno, bordes o m&aacute;rgenes.</p>
+                <p>Por ejemplo:</p>
+                <p id="ancho">Vemos el ancho en el cual puedo escribir. Aqu&iacute; es de 75px.</p>
+            </div>
+
+            <div class="container">
+                <h3>Height</h3>
+                <p>Establece la altura de un elemento. De la misma manera que width esta no incluye bordes m&aacute;rgenes
+                    o relleno.
+                </p>
+                <p>Ejemplo:</p>
+                <p id="altura">Estamos estableciendo una altura de 5em. Es por eso que el texto se ve m&aacute;s separado de la parte de abajo.</p>
+            </div>
+
+            <div class="container">
+                <h3>List-style</h3>
+                <p>Esta propiedad le da estilo a una lista y es una shorthand para las siguientes propiedades:</p>
+                <ul>
+                    <li>list-style-type</li>
+                    <li>list-style-position</li>
+                    <li>list-style-imagen</li>
+                </ul>
+                <p>Ejemplo:</p>
+                <p>La manera en la que lo podemos ver aplicado es que los bullets son cuadrados.</p>
+                <ul class="ulstyle">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <h3>Margin</h3>
+                <p>Establece nos m&aacute;rgenes para los elementos. De igualmanera es una abreviaci&oacute;n para los elementos como:</p>
+                <ul>
+                    <li>margen superior</li>
+                    <li>margen derecho</li>
+                    <li>margen izquierdo</li>
+                    <li>margen inferior</li>
+                </ul>
+                <p>Por ejemplo:</p>
+                <p id="margen1">Estamos haciendo uso de un margen de 10px. Esto igula nos dice que como solo es un valor los cuatro margenes
+                    van a tener el mismo valor (10px).
+                </p>
+            </div>
+
+            <div class="container">
+                <h3>Padding</h3>
+                <p>El padding es el espacio que existe entre el contenido y su borde. Puede tener valores de 1 a 4,
+                    y se escribe el valor con px.
+                </p>
+                <p>Por ejemplo:</p>
+                <p id="ejemploP">Se esta aplicando un padding de 4 valores.</p>
+            </div>
+
+            <div class="container">
+                <h3>Overflow</h3>
+                <p>Esta propiedad indica lo que deberia de suceder si el contenido desborda la caja de un elemento.
+                    Nos indica si es necesario recortar contenido o agregar barras de desplazamiento.
+                </p>
+                <p>Por ejemplo:</p>
+                <p id="ovf">La informaci&oacute;n que se presenta en este ejemplo va a superar y desbordar la cajaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            </div>
+
+            <div class="container">
+                <h3>Display</h3>
+                <p>Especifica el comportamiento de visializaci&oacute;n de un elemento. Tipo de cuadro de representaci&oacute;n</p>
+                <p clas="displasy1">Ejemplo: Estamos haciendo uso del display inline</p>
+            </div>
+
+            <div class="container">
+                <h3>Position</h3>
+                <p>Esta propiedad especifica el tipo de m&eacute;todo de posicionamiento utilizado para un elemento (est&aacute;tico, relativo, absoluto, fijo o pegajoso).
+                    Se puede colocar el texto en cualquier parte del documento.
+                </p>
+                <p>Por ejemplo:</p>
+                <h4 id="pos">Encabezado con posicionamiento est&aacute;tico</h4>
+            </div>
+
+            <div class="container">
+                <h3>Filter</h3>
+                <p>Establece efecto visuales, como desenfoque y saturaci&oacute;n en un elemento. Se usa comunmente en las img</p>
+                <p>Por ejemplo: Aplicamos un filto de grises a la im&aacute;gen.</p>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HiJzzlywYX-RK49c9brMNwHaEK%26pid%3DApi&f=1&ipt=7b105af14c92c19792767d28e5c07afdb3c837d33f1ad47a9380c4f9096f0996&ipo=images">
             </div>
         </body>
     </head>
