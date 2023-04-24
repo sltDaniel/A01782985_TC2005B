@@ -1,0 +1,130 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main{
+    border: rgb(5, 8, 54)solid;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgb(5, 8, 54);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+#main1{
+    justify-content: flex-start;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    /*align-items: center;*/
+    background: orange;
+    color: white;
+    padding: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#content1{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 50px;
+
+}
+
+
+.sub{
+    display: flex;
+    background: rgb(5, 8, 54);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.srch{
+    margin-left: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: orange;
+}
+
+.fotos{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+.fhtml{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fccs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.fjs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto1{
+    width: 90px;
+}
+#foto2{
+    width: 75px;
+}
+#foto3{
+    width: 65px;
+}
+
+
+.final{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    border: 1px solid rgb(5, 8, 54);
+    background: rgb(5, 8, 54);
+    color: white;
+    font-size: 11px;
+    padding: 20px;
+}
