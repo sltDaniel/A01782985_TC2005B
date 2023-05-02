@@ -50,6 +50,9 @@ TagManager:
   - name: Road
     uniqueID: 1621690425
     locked: 0
+  - name: Moneda
+    uniqueID: 320326383
+    locked: 0
   - name: Carro
     uniqueID: 24220457
     locked: 0
