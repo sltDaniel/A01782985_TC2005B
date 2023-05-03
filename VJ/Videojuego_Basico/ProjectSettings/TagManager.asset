@@ -41,3 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 3420314929
+    locked: 0
+  - name: 'Edificios '
+    uniqueID: 4067525181
+    locked: 0
+  - name: Road
+    uniqueID: 1621690425
+    locked: 0
+  - name: Moneda
+    uniqueID: 320326383
+    locked: 0
+  - name: Carro
+    uniqueID: 24220457
+    locked: 0
