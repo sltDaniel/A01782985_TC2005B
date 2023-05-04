@@ -4,24 +4,33 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public int PuntosTotales { get { return puntosTotales; } }
+  //  public int PuntosTotales { get { return puntosTotales; } }
+    public static GameManager Instance { get; private set; }
 
-    private int puntosTotales;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   // private int puntosTotales;
 
-    // Update is called once per frame
-    void Update()
+    public Contador contador;
+
+    public int PuntosTotales {get; private set;}
+
+    void Awake()
     {
-        
+        if(Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Debug.Log("Más de un Game Manager en escena");
+        }
     }
 
     public void SumarPuntos(int puntosASumar)
     {
-        puntosTotales = puntosTotales + puntosASumar;
-        Debug.Log(puntosTotales);
+        PuntosTotales = PuntosTotales + puntosASumar;
+       // Debug.Log(puntosTotales);
+        contador.ActualizarPuntos(PuntosTotales);
     }
+
+
 }

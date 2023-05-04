@@ -5,18 +5,23 @@ using TMPro;
 
 public class Contador : MonoBehaviour
 {
-    public GameManager gameManager;
+    //public GameManager gameManager;
     public TextMeshProUGUI Puntos;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] vidas;
 
     // Update is called once per frame
     void Update()
     {
-        Puntos.text = gameManager.PuntosTotales.ToString();
+        Puntos.text = GameManager.Instance.PuntosTotales.ToString();
+    }
+
+    public void ActualizarPuntos(int puntosTotales)
+    {
+        Puntos.text = puntosTotales.ToString();
+    }
+
+    public void DesactivarVida(int indice)
+    {
+        vidas[indice].SetActive(false);
     }
 }
