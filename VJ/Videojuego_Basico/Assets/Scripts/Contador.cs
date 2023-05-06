@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Contador : MonoBehaviour
 {
     //public GameManager gameManager;
     public TextMeshProUGUI Puntos;
     public GameObject[] vidas;
+    [SerializeField] private List<GameObject> listaCorazones;
+    [SerializeField] private Sprite corazonDesactivado;
+
 
     // Update is called once per frame
     void Update()
@@ -20,8 +24,9 @@ public class Contador : MonoBehaviour
         Puntos.text = puntosTotales.ToString();
     }
 
-    public void DesactivarVida(int indice)
+    public void RestaCorazones(int indice)
     {
-        vidas[indice].SetActive(false);
+        Image imagenCorazon = listaCorazones[indice].GetComponent<Image>();
+        imagenCorazon.Sprite = corazonDesactivado;
     }
 }
