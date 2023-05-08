@@ -27,6 +27,6 @@ public class Contador : MonoBehaviour
     public void RestaCorazones(int indice)
     {
         Image imagenCorazon = listaCorazones[indice].GetComponent<Image>();
-        imagenCorazon.Sprite = corazonDesactivado;
+        imagenCorazon.sprite = corazonDesactivado;
     }
 }

@@ -9,7 +9,7 @@ public class CarControl : MonoBehaviour
     public float accelerationFactor = 30.0f;
     public float turnfactor = 3.5f;
     public float maxSpeed = 20;
-    private int vidas = 3;
+    private int vidaPersonaje = 3;
     [SerializeField] Contador contar;
 
     //Local variables
