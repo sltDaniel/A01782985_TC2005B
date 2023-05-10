@@ -3719,8 +3719,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8999707260911517839, guid: f0a511eff83e34445a10ba9db7102f39, type: 3}
   m_PrefabInstance: {fileID: 1131764862}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &1140444995
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,7 +3834,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
->>>>>>> c461c5fd9d0fdb80eeca3f5ea5121d90412e83c3
 --- !u!1001 &1151967167
 PrefabInstance:
   m_ObjectHideFlags: 0
