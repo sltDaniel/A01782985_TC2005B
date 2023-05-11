@@ -24,6 +24,7 @@ public class Contador : MonoBehaviour
         Puntos.text = puntosTotales.ToString();
     }
 
+    //Funcion que desactiva los corazones (Sprite)
     public void RestaCorazones(int indice)
     {
         Image imagenCorazon = listaCorazones[indice].GetComponent<Image>();

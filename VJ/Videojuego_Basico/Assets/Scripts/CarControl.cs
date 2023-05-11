@@ -9,8 +9,6 @@ public class CarControl : MonoBehaviour
     public float accelerationFactor = 30.0f;
     public float turnfactor = 3.5f;
     public float maxSpeed = 20;
-    private int vidaPersonaje = 3;
-    [SerializeField] Contador contar;
 
     //Local variables
     float accelerationInput = 0;
@@ -90,15 +88,4 @@ public class CarControl : MonoBehaviour
         carRigidbody2D.velocity = forwardVelocity + rightVelocity * driftFactor;
     }
 
-    private void CausarHerida()
-    {
-        if(vidaPersonaje>0)
-        {
-            vidaPersonaje--;
-            contar.RestaCorazones(vidaPersonaje);
-            if(vidaPersonaje==0){
-                Debug.Log("Game Over");
-            }
-        }
-    }
 }

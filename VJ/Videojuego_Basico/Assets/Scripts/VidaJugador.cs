@@ -5,17 +5,32 @@ using System;
 
 public class VidaJugador : MonoBehaviour
 {
+    //Variables globales
+    private Contador contar;
+    private int vidaPersonaje = 3;
 
-    [SerializeField] private int vida;
-    public event EventHandler MuerteJugador;
+    //Funcion que detecta la entrada de una colision
+    void OnCollisionEnter2D(Collision2D collision){ //Esta funcion detecta cuando el collider del carro choca con el collider del otro carro
+        if (collision.gameObject.tag == "AI"){ //Si el gameObject es la AI entra al if
+            CausarHerida(); //Llamada a la funcion del sistema de vida
+        }
+        Debug.Log("Auch!"); //Imprime en la consola
+    }
 
-    public void Daño(int CantidadDaño)
+    //Funcion que resta una vida al jugador
+    private void CausarHerida()
     {
-        vida -= CantidadDaño;
-        if(vida <= 0)
+        if(vidaPersonaje > 0)
         {
-            MuerteJugador?.Invoke(this, EventArgs.Empty);
-            Destroy(gameObject);
+            vidaPersonaje--; //Resta uno a la variable privada vidapersonaje
+            if(contar == null) //Agregamos una validaciÃ³n para asegurarnos de que contar no sea null
+            {
+                contar = FindObjectOfType<Contador>(); //Inicializamos la variable si es null
+            }
+            contar.RestaCorazones(vidaPersonaje); //Llama al atributo de RestaCorazones que recibe como parametro un entero
+            if(vidaPersonaje==0){ //Si la vida de personaje llega cero es Game Over
+                Debug.Log("Game Over");
+            }
         }
     }
 }
